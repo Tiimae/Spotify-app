@@ -66,6 +66,7 @@ function Sidebar() {
                         <hr className="border-t-[0.1px] border-gray-900"/>
                         {playlists.map((playlist) =>
                             <p className="cursor-pointer hover:text-white" onClick={() => {
+                                toggleHamburgerOpen()
                                 setPlaylistId(playlist.id);
                             }}>
                                 <Link href="/playlist" key={playlist.id}>

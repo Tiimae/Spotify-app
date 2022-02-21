@@ -17,7 +17,7 @@ const colors = [
     "from-purple-500",
 ]
 
-function Center () {
+function SongCenter () {
     const spotifyApi = useSpotify();
     const {data: session} = useSession();
     const [color, setColor] = useState(null);
@@ -59,4 +59,4 @@ function Center () {
     )
 }
 
-export default Center
+export default SongCenter

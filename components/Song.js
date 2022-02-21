@@ -27,9 +27,9 @@ function Song({order, track}) {
                 </div>
             </div>
 
-            <div className="flex items-center justify-between ml-auto ml-0">
+            <div className="flex items-center justify-between ml-auto mr-0 md:ml-0">
                 <p className="hidden md:inline w-40">{track.track.album.name}</p>
-                <p>{millisToMinutesAndSeconds(track.track.duration_ms)}</p>
+                <p className="">{millisToMinutesAndSeconds(track.track.duration_ms)}</p>
             </div>
         </div>
     );
